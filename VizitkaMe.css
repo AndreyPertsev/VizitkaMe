@@ -1,0 +1,209 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: Lavender;
+    color: #333;
+}
+
+a {
+    padding: 20px
+}
+
+.neontext {
+    color: #fff;
+    text-shadow:
+        0 0 10px rgb(84, 0, 194),
+        0 0 20px rgb(84, 0, 194),
+        0 0 40px rgb(84, 0, 194),
+        0 0 80px rgb(84, 0, 194),
+        0 0 160px rgb(84, 0, 194);
+}
+
+header {
+    background: linear-gradient(130deg, rgba(92, 96, 161, 0.99) 0%, transparent 100%),
+        linear-gradient(65deg, rgb(76, 114, 136) 0%, rgb(85, 82, 138) 10%, rgb(86, 119, 162) 40%, rgb(88, 142, 149) 65%, rgb(85, 82, 138) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.avatarka {
+    width: 150px;
+    /* Размер вашей фотографии */
+    height: auto;
+    border-radius: 50%;
+    /* Если вы хотите, чтобы фотография была круглой */
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /* box-shadow добавляет тень к элементу */
+}
+
+h2 {
+    font-size: 24px;
+    color: DarkSlateBlue;
+}
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(135deg, transparent 0%, rgba(159, 136, 235, 0.71) 100%),
+        linear-gradient(200deg, rgb(184, 77, 220) 0%, rgb(115, 123, 222) 100%);
+    color: #fff;
+}
+
+/* :nth-child — это псевдокласс, 
+который позволяет выбирать элементы по их 
+порядковому номеру */
+/* (odd)- Все нечетные номера элементов.
+(even)- Все четные номера элементов.) 
+(3) - Конкретный номер элемента
+*/
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.custom-list {
+    list-style-type: disc;
+    /* Задаем стиль маркера списка (кружочек) */
+}
+
+.contacts {
+    background: linear-gradient(130deg, rgba(92, 96, 161, 0.99) 0%, transparent 100%),
+        linear-gradient(65deg, rgb(76, 114, 136) 0%, rgb(85, 82, 138) 10%, rgb(86, 119, 162) 40%, rgb(88, 142, 149) 65%, rgb(85, 82, 138) 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-box {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    margin-bottom: 0px;
+    color: #fff;
+    width: auto;
+    padding: 0px 30px;
+    border-radius: 5px;
+}
+
+.animeSpisok {
+    list-style-type: none;
+}
+
+.fotoMy {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.raspolFoto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contact-button {
+    background-color: #001abb;
+    color: #fff;
+    border: #000;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* CSS псевдокласс :hover срабатывает, 
+когда пользователь наводит на элемент мышью */
+#contact-button:hover {
+    background-color: #005aa8;
+}
+
+.conteinerSocseti {
+    display: flex;
+    flex-direction: row;
+}
+
+.socsetiOform {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+@media (max-width: 800px) {
+    .otklychenieFoto {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .otklychenieAva {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    .twoFotoOst {
+        display: none;
+    }
+}
+
+@media (max-width: 1525px) {
+    .threeFoto {
+        display: none;
+    }
+}
+
+@media (max-width: 1850px) {
+    .fourFoto {
+        display: none;
+    }
+}
